@@ -3671,7 +3671,7 @@ h2 {
     width: auto;
     display: inline-block;
     padding: 0.7em;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
 }
 
 #viewport ul,
