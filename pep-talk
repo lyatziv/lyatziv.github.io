@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+
+<head>
+    <script>
+        var dict = [
+            { group: 1, val: "Champ," },
+            { group: 2, val: "the mere idea of you," },
+            { group: 3, val: "has serious game," },
+            { group: 4, val: "24/7." },
+            { group: 1, val: "Fact:" },
+            { group: 2, val: "your soul" },
+            { group: 3, val: "rains magic," },
+            { group: 4, val: "can I get an amen?" },
+            { group: 1, val: "Everybody says" },
+            { group: 2, val: "your hair today" },
+            { group: 3, val: "deserves the Nobel Prize," },
+            { group: 4, val: "and that's a fact." },
+            { group: 1, val: "Dang." },
+            { group: 2, val: "everything you do" },
+            { group: 3, val: "raises the roof," },
+            { group: 4, val: "so treat yourself." },
+            { group: 1, val: "Check it:" },
+            { group: 2, val: "your personal style," },
+            { group: 3, val: "breeds miracles," },
+            { group: 4, val: "you feel me?" },
+            { group: 1, val: "Just saying." },
+            { group: 2, val: "every thought you have" },
+            { group: 3, val: "is paying off big time," },
+            { group: 4, val: "that's just science." },
+            { group: 1, val: "Superstar," },
+            { group: 2, val: "that sparkle in your eye" },
+            { group: 3, val: "shows mad skills," },
+            { group: 4, val: "would I lie?" },
+            { group: 1, val: "Tiger," },
+            { group: 2, val: "your presence here" },
+            { group: 3, val: "just shimmers," },
+            { group: 4, val: "for reals." },
+            { group: 1, val: "Self," },
+            { group: 2, val: "what you got going on" },
+            { group: 3, val: "is a national treasure," },
+            { group: 4, val: "mic drop." },
+            { group: 1, val: "Know this:" },
+            { group: 2, val: "the essential you" },
+            { group: 3, val: "gets the party hopping," },
+            { group: 4, val: "you hidden gem." },
+            { group: 1, val: "News alert:" },
+            { group: 2, val: "your life's journey" },
+            { group: 3, val: "is the next big thing," },
+            { group: 4, val: "snuggle bear." },
+            { group: 1, val: "Girl," },
+            { group: 2, val: "that saucy personaliy" },
+            { group: 3, val: "roars like a lion," },
+            { group: 4, val: "period." },
+            { group: 1, val: "Ace," },
+            { group: 2, val: "your DNA" },
+            { group: 3, val: "is a rainbow factory," },
+            { group: 4, val: "can I get an amen?" },
+            { group: 1, val: "Excuse me but" },
+            { group: 2, val: "that brain of yours" },
+            { group: 3, val: "is made of diamonds," },
+            { group: 4, val: "now let's dance." },
+            { group: 1, val: "Experts agree:" },
+            { group: 2, val: "your choice of attire" },
+            { group: 3, val: "makes birds sing," },
+            { group: 4, val: "high five." },
+            { group: 1, val: "In my opinion," },
+            { group: 2, val: "the way you roll" },
+            { group: 3, val: "should be taught in school," },
+            { group: 4, val: "say it again!" },
+            { group: 1, val: "Hear ye, hear ye:" },
+            { group: 2, val: "whatever your secret is" },
+            { group: 3, val: "makes my world go 'round," },
+            { group: 4, val: "according to CNN." },
+            { group: 1, val: "Okay, listen up:" },
+            { group: 2, val: "all of y'all" },
+            { group: 3, val: "is 100% legit," },
+            { group: 4, val: "so get used to it" }
+        ]
+
+        const getValByGroup = (group) => {
+            const vals = dict.filter(rec => rec.group === group)
+            // vals.length = 5
+            const key = Math.floor(Math.random() * vals.length)
+            return vals[key].val
+        }
+
+        const complement = () => [1, 2, 3, 4].map(part => getValByGroup(part)).join(' ')
+
+        window.addEventListener('load', (event) => {
+            document.getElementById('pep_talk').innerText = complement()
+        });
+
+        document.addEventListener('click', () => {
+            document.getElementById('pep_talk').innerText = complement()
+        });
+
+    </script>
+    <style>
+        /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+        /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+        *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+            all: unset;
+            display: revert;
+        }
+
+        /* Preferred box-sizing value */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #pep_talk {
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            line-height: 100vh;
+            font-size: xx-large;
+            font-family: sans-serif;
+            padding: 0;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background: #FFF;
+                color: #333;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #333;
+                color: #FFF;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <span id="pep_talk"></span>
+</body>
+
+</html>
