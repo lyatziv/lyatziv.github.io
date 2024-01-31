@@ -16,7 +16,7 @@ var menu = {
     'play': {
         'title': 'Play',
         'position': 2,
-        'selector': 'https://battleship-p1hjh73x6-fixedspace.vercel.app/'
+        'selector': 'https://battleship-ten-amber.vercel.app/'
     },
     },
     'cv': {
