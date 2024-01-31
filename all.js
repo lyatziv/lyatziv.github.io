@@ -18,7 +18,6 @@ var menu = {
         'position': 2,
         'selector': 'https://battleship-ten-amber.vercel.app/'
     },
-    },
     'cv': {
         'title': 'Work',
         'position': 3,
