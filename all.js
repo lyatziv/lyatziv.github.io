@@ -13,14 +13,20 @@ var menu = {
         'position': 1,
         'selector': '#home'
     },
+    'play': {
+        'title': 'Play',
+        'position': 2,
+        'selector': 'https://battleship-p1hjh73x6-fixedspace.vercel.app/'
+    },
+    },
     'cv': {
         'title': 'Work',
-        'position': 2,
+        'position': 3,
         'selector': '#cv'
     },
     'clients': {
         'title': 'Clients',
-        'position': 3,
+        'position': 4,
         'selector': '#clients'
     },
     // 'animation': {
