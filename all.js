@@ -38,12 +38,12 @@ var menu = {
         'position': 5,
         'selector': '#photography',
         'data_json' : 'https://picasaweb.google.com/data/feed/api/user/108735230800035911232/albumid/5556650870876839585?alt=json&kind=photo&hl=en_US'
+    },
+    'linkedin': {
+        'title': 'Linkedin',
+        'position': 6,
+        'selector': 'https://www.linkedin.com/in/yatziv/'
     }
-    // 'prices': {
-    //     'title': 'Prices',
-    //     'position': 6,
-    //     'selector': '#prices'
-    // }
 }
 
 var photos = '',
